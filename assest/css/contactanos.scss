@@ -1,0 +1,100 @@
+@use "commons" as c;
+
+#contactanos{
+    text-align: center;
+
+    color:map-get(c.$colores,"color-letra2");
+}
+
+
+body{
+    
+    background: url(/assest/img/fondo\ contacto.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+@media (min-width:767px){
+    .body{font-size: 1.4rem;
+        font-size: 62.5%;
+    }
+     h2{
+        font-size: 1.9rem;
+    }
+}
+h1{
+    text-align: center;
+    padding: 20px 20px;
+    color: map-get(c.$colores,"color-letra1");
+}
+.form{
+    width: 30%;
+    min-width: 300px;
+    background: map-get(c.$colores,"color-negro1");
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: map-get(c.$colores,"color-footer");
+}
+h2{
+    font-size: 1.3rem;
+    text-align: center;
+    color: map-get(c.$colores,"color-footer");
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+.header span{
+    color:map-get(c.$colores,"color-principal1");
+}
+
+.form__input{
+    
+    width: 100%;
+    height: 45px;
+    background:map-get(c.$colores,"color-negro2");
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid map-get(c.$colores,"color-footer");
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color:map-get(c.$colores,"color-principal1");
+}
+.form__text{
+    
+    width: 100%;
+    background: map-get(c.$colores,"color-negro2");
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px map-get(c.$colores,"color-footer");
+    color:map-get(c.$colores,"color-principal1");
+}
+
+.form__text::placeholder{
+    font-size: 1.4rem;
+}
+.form__lable{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.enviar{
+    width: 100%;
+    height: 50px;
+    background: map-get(c.$colores,"color-negro2");
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: map-get(c.$colores,"color-footer");
+    color:map-get(c.$colores,"color-principal1");
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.enviar:hover{
+    background: map-get(c.$colores,"color-footer2");
+}
